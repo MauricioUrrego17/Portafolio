@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --clr-yellow: #aebb0d;
+    --clr-coffee: #573d17;
+    --clr-white: #e2f6ff;
+}
+
+body {
+    background-color: var(--clr-white);
+    color: var(--clr-coffee);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: var(--clr-coffee);
+    color: var(--clr-white);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    font-size: 1.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.instrucciones {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.7em;
+}
+
+.marcador {
+    padding: 1rem 2rem;
+    background-color: var(--clr-yellow);
+    border-radius: 1rem;
+    color: var(--clr-coffee); 
+    font-weight: 500;
+}
+
+.elegirNumero {
+    padding: 2rem;
+}
+
+.elegirNumero h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.numero {
+    font-size: 2rem;
+    background-color: var(--clr-coffee);
+    border: 0;
+    padding: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.mensaje {
+    margin-bottom: 2rem;
+    line-height: 2;
+    margin-top: 10px;
+}
+
+.mensaje .eleccion {
+    color: var(--clr-white);
+    background-color: var(--clr-yellow);
+    border-radius: .25rem;
+    padding-inline: .25rem;
+    padding: 4px;
+}
+
+.btn {
+    border: 0;
+    line-height: 1;
+    background-color: var(--clr-coffee);
+    color: var(--clr-white);
+    font-size: 1rem;
+    padding: .7rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.disabled {
+    display: none;
+}

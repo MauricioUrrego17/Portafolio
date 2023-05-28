@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el número</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Adivina el número</h1>
+    </header>
+    <main>
+        <p class="instrucciones" id="instrucciones">
+            Solo tienes 5 intentos.
+        </p> 
+
+        <div class="marcador">
+            <p class="intento">Intento número: 
+                <span id="intentos">0</span>
+            </p>
+        </div>
+
+        <div class="elegirNumero" id="elegirNumero">
+            <h2>Elige el número que crees que tiene la maquina</h2>
+            <div class="numeros">
+                <button class="numero" id=1>1️⃣</button>
+                <button class="numero" id=2>2️⃣</button>
+                <button class="numero" id=3>3️⃣</button>
+                <button class="numero" id=4>4️⃣</button>
+                <button class="numero" id=5>5️⃣</button>
+            </div>
+        </div>
+
+        <div class="mensaje disabled" id="mensaje">
+            <p>
+                Usaste <span class="eleccion" id="eleccionUsuario">Uno 1️⃣ </span><br>
+                y la computadora usó <span class="eleccion" id="eleccionPC">Dos2️⃣</span>
+            </p>
+        </div>
+        <button class="btn disabled" id="reiniciar">Reiniciar juego</button>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

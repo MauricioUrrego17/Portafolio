@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style..css">
+    <title>MINIJUEGO</title>
+
+</head>
+<body>
+           <!--  -->
+            <div class="ventana">
+                <h1>MINIJUEGO FRUTAS</h1>
+                <br>
+                <p>MUEVE TU PERSONAJE Y COME TODAS LAS FRUTAS GENERADAS PARA GANAR EL JUEGO!</p>
+                <br>
+                <p>(A-W-S-D)</p>
+            </div>
+
+            <div class="nivel">
+                <table border="2">
+                    <tr>
+                        <th>NIVEL ACTUAL</th>
+                        <th>NIVEL MAXIMO</th>
+                    </tr>
+                    <tr>
+                        <td  id="nivelActual">1</td>
+                        <td id="nivelFinal">7</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="grafico">
+               <canvas width="750" height="650" id="cuadro"></canvas>
+            </div>
+
+            <div class="botons">
+                <button onclick="subirPlayer" id="arriba">UP</button>
+                <button onclick="bajarPlayer" id="abajo">DOWN</button>
+                <button onclick="izquierdaPlayer" id="izquierda">LEFT</button>
+                <button onclick="derechaPlayer" id="derecha">RIGTH</button>
+             </div>
+
+            
+
+            <script src="accion.js"></script>
+            
+</body>
+</html>
